@@ -20,14 +20,11 @@ export default function RootLayout({
 }>) {
 
   const [packageData, setPackageData] = useState(null);
-  
-  const handleChange = (data) => {
-    setPackageData(data);
-  };
+
   return (
     <html lang="en">
       <body className={inter.className}>
-        <CustomNav handleChange={(props) => setPackageData(props)} />
+        <CustomNav handleChange={(props: any) => setPackageData(props)} />
         {children}
       </body>
     </html>

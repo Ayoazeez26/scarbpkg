@@ -5,12 +5,14 @@ import { useState } from "react";
 import LogoIcon from "@/components/UI/iconsComponents/icons/logo";
 import "globals";
 import Link from "next/link";
-const CustomNav = (props) => {
+import { PackageData } from "@/types";
+
+const CustomNav = (props: any) => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchResults, setSearchResults] = useState([] as PackageData[]);
   const [noResults, setNoResults] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [packageData, setPackageData] = useState(null);
+  const [packageData, setPackageData] = useState({} as PackageData);
   const [showDropdown, setShowDropdown] = useState(false);
   const router = useRouter();
   const handleSearch = async () => {
@@ -35,7 +37,7 @@ const CustomNav = (props) => {
     }
   };
 
-  const savePackageData = (data) => {
+  const savePackageData = (data: PackageData) => {
     setPackageData(data);
     props.handleChange(data);
     setShowDropdown(false);
