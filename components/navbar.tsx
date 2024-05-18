@@ -19,7 +19,7 @@ const CustomNav = (props: any) => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:8000/api/v1/packages/search?packageName=${searchTerm.toLowerCase()}`
+        `https://scarbapi.adaptable.app/api/v1/packages/search?packageName=${searchTerm.toLowerCase()}`
       );
       const data = await response.json();
       console.log(data);

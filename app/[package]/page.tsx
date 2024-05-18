@@ -20,7 +20,7 @@ export default function Page() {
       setLoading(true);
       try {
         const response = await fetch(
-          `http://localhost:8000/api/v1/packages/search?packageName=${payload}`
+          `https://scarbapi.adaptable.app/api/v1/packages/search?packageName=${payload}`
         );
         const data = await response.json();
         console.log(data);
