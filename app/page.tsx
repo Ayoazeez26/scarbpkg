@@ -11,13 +11,13 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tight leading-relaxed text-white/80 sm:text-6xl">
               Build amazing Cairo and Starknet dApps with scarb packages
             </h1>
-            <p className="mt-6 text-lg leading-8 text-white">
+            {/* <p className="mt-6 text-lg leading-8 text-white">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
               amet libero corrupti ipsa ea iusto dolorem, perspiciatis expedita
               facilis, harum tempora pariatur inventore nostrum vel et earum
               fugiat saepe accusamus est recusandae repudiandae culpa mollitia
               fugit doloremque. Error, id temporibus!
-            </p>
+            </p> */}
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
