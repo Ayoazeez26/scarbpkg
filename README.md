@@ -1,3 +1,7 @@
+# SCARBPKG
+This is the booststrap of the frontend of the scarb packages directory. This project aims to provide a registory of scarb packages where you can find packages and get instructions to install and other helpful resources about the package.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
